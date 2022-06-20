@@ -3,4 +3,3 @@ numpy
 matplotlib
 albumentations
 opencv-python-headless
-torch
