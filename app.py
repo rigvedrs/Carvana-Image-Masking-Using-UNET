@@ -16,13 +16,24 @@ def inference(filepath):
     
 #     print(data['image'].shape)
 
-    input_batch = preprocess(filepath)
-    result = predict(input_batch)
-    x = result.detach().numpy()
-    x = x.reshape(572,572)
-    plt.imshow(x,cmap="gray")
-    plt.title("Segmented Image")
+    # input_batch = preprocess(filepath)
+    # result = predict(input_batch)    
+    # result1 = np.array(result)
+    # result1 = result1.reshape(572,572)
+    # plt.imshow(result1,cmap="gray")
+    # plt.title("Masked Image")
+    
+    input_img = preprocess(filepath)
+    input_img = input_img.unsqueeze(0)
+    input_img = input_img.detach().numpy()
+    result = predict(input_img)    
+    result1 = np.array(result)   
+    result1 = result1.reshape(572,572)
+    plt.imshow(result1,cmap="gray")
+    plt.title("Masked Image")
+    
     return plt
+
 
 
 title = "Carvana Image Segmentation using PyTorch"

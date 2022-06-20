@@ -1,5 +1,3 @@
-import gradio as gr
-import numpy as np
 import matplotlib.pyplot as plt
 from preprocess import preprocess
 from predict import predict
