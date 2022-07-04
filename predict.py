@@ -27,7 +27,7 @@ import matplotlib.pyplot as plt
 def predict(input_img):
     
     model_onnx = 'Model/model.onnx'
-    session= onnxrt.InferenceSession(model_onnx)
+    session= onnxrt.InferenceSession(model_onnx, providers=['TensorrtExecutionProvider', 'CUDAExecutionProvider', 'CPUExecutionProvider')
     input_name = session.get_inputs()[0].name
     output_name = session.get_outputs()[0].name
     result = session.run([output_name], {input_name: input_img})
