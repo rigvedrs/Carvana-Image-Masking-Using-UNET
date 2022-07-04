@@ -23,4 +23,10 @@ The model has been converted to ONNX format and deployed using Gradio & hosted o
 ## Predictions 🔍
 Predictions on unseen test data:
 
+### 1)
+![ss1](/Examples/ss1.png)  
+
+### 2)
+![ss2](/Examples/ss2.png)
+
 
