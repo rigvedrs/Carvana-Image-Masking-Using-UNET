@@ -11,7 +11,7 @@ Dataset used from Kaggle [Carvana Image Masking Challenge](https://www.kaggle.co
 
 
 ## Notebook 📒
-View the notebook here: [](https://nbviewer.org/github/rigvedrs/Carvana-Image-Masking-Using-UNET/blob/main/Notebook/unet-image-segmentation.ipynb)
+View the notebook [here](https://nbviewer.org/github/rigvedrs/Carvana-Image-Masking-Using-UNET/blob/main/Notebook/unet-image-segmentation.ipynb)
 
 
 
